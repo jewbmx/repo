@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.scrubsv2" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX" version="4.6.2">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.scrubsv2" />
+        <import addon="script.scrubsv2.artwork" />
+        <import addon="script.module.resolveurl" />
+        <import addon="script.module.urlresolver" optional="true" />
+    </requires>
+    <extension library="main.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="[startup|login]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_US">A Clean Source To Dirty Things...</summary>
+        <description lang="en_US">Movies, Tv Shows, Anime, and What Not. [CR]See Settings for the Help/About tab. [CR]See bottom of Main Menu for Show Changelog Option. [CR]Providers are now sorted different in the settings and all the best normal ones are enabled. [CR]Disabled by Default: Debrid/Prem/Torr and a 'Sloppy' Stack too, Enable the ones you want from these sections in the settings. [CR]Instead of being confused with all those choices half enabled i decided to go another way. [CR]You enable/disable the ones you dont like and let me handle the broken providers. [CR]How it should be :)</description>
+        <disclaimer lang="en_US">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <license>Free the People!, Free the World!!</license>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshots/screenshot_1.png</screenshot>
+        </assets>
+        <news>[B] Total CleanUp of EN Providers[/B]: Checked and all good as of 08-24-2019. [CR][B] (If a non-en provider is broken let me know, as i dont bother with em.)[/B] [CR][B] (Please Report Any Issues To Me Directly. Details Are in Settings.)[/B] </news>
+    </extension>
+</addon>

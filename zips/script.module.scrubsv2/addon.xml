@@ -1,0 +1,20 @@
+<addon id="script.module.scrubsv2" name="[COLOR orange]Scrubs v2 Module[/COLOR]" provider-name="JewBMX" version="4.6.4">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.beautifulsoup" />
+        <import addon="script.module.dateutil" />
+        <import addon="script.module.futures" />
+        <import addon="script.module.metahandler" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Scrubs v2 Module(The Guts)</summary>
+        <description>Scrubs v2 Module(The Guts)</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

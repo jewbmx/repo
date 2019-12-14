@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.ezclean" name="EZ Clean" provider-name="People" version="1.7">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>program executable</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">A Streamlined Utility Tool for Kodi.</summary>
+        <description lang="en">A Streamlined Utility Tool for Kodi.</description>
+        <language/>
+        <platform>all</platform>
+        <license>The MIT License</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

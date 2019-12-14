@@ -1,0 +1,57 @@
+(Report any errors or issues @ https://github.com/jewbmx/repo/issues)
+(If you'd like to add anything or help out with this addon, fork and pull.)
+[B][COLOR yellow] WARNING: Still Testing, May Cause Problems. [/COLOR][/B]
+
+[B] v1.7 [/B]
+- QuickFix for a log startup error.
+
+[B] v1.6 [/B]
+- Total Revamp.
+- Too much changed to list lol.
+(Everything still needs tested some more.)
+(Errors are likely as i might of missed a few things.)
+
+[B] v1.5 [/B]
+- Added Clear Advanced Settings in Tools Menu.
+- Added a bunch of Notifications for different options and steps.
+- Changed and/or Updated a bunch of Notifications code also.
+- Removed hard coded Color so kodi skin colors can be used.
+- Started Adding Language files so it isnt hard coded english.
+(Will continue later.)
+
+[B] v1.4 [/B]
+- Few bugs fixed.
+- Added Hide/Show to settings for Menus.
+(Menu Navigation Customization.)
+- Added a yes/no for Fresh Start option to cancel easier.
+- Added Reload Profile to Tools Menu.
+- Added Enable Unknown Sources in Tools Menu.
+- Added Enable Addons to Tools Menu.
+(Enables all addons with 1 click.)
+- Added Clear Empty Folders to Maintenance Menu.
+(Clears All Empty Folders.)
+- Added Clear Resolvers Cache to Maintenance Menu.
+(Runs the Reset Function Cache for resolveurl and urlresolver.)
+
+[B] v1.3 [/B]
+- Few bugs fixed.
+
+[B] v1.2 [/B]
+- Full Dent Check and fix.
+- Added Show Changelog.
+- Few bugs fixed.
+- Added a few kodi 18 fixes.
+- Added Wizard Settings shortcut to Wizard Menu.
+
+[B] v1.1 [/B]
+- Updated debug log code.
+- Reorganized Menus.
+- Added Force Update for addons and repos.
+- Removed SpeedTest.
+- Renamed to prevent any issues.
+- Gave the Artwork a little Purple.
+
+[B] v1.0 [/B]
+- Initial Release.
+(Fork of EZ Maintenance+)
+

@@ -1,0 +1,195 @@
+[B][COLOR grey](Contact me about any errors or issues.)(https://github.com/jewbmx/repo/issues)
+(Also feel free to test anything and tell me what works and what dont.) [/COLOR][/B]
+
+[B][COLOR purple] v4.1 and Up [/COLOR][/B]
+- Located in normal ChangeLog.
+
+[B][COLOR purple] v4.0 [/COLOR][/B]
+- Fixed a little blonde moment in the settings code that was tossing errors in the debug.
+- Removed some useless Providers and broken ones.
+- Updated some Providers code. (Most have "valid" check now.)
+(Can enable some spare Providers now without worryin about 200+ results lol.)
+- Added vshare.io results to the craptcha list because they rarely work for me.
+(Wanna see the hidden results or more? enable 'Hosters with captchas' in the Settings.)
+- Finished adding the auto resume option, still testing as well.
+- Added the resume fix in for kodi 18, seems a lil glitchy at times.
+(this fix caused issues for some devices running kodi 17 but too bad now that 18 has taken over.)
+- Updated the code for trakt.user in the settings.
+(Now you can see your username to show you are auth'D.)
+[B][COLOR orange] (I am now running Kodi 18 on all devices so support for any other versions will be limited. all focus will be on 18.) [/COLOR][/B]
+
+[B][COLOR purple] v3.9 [/COLOR][/B]
+- Updated the Settings. (Fix for Kodi 18 Bugs.)
+- Moved Provider settings around to fix a big issue/error.
+- Changed the Trakt Auth options name to make it show for 18.
+(Providers are now in 3 tabs instead of 1.)
+(new tabs might cause issues with something else in the addon.)
+(report any errors or issues to me for a speedy fix.)
+
+[B][COLOR purple] v3.8 [/COLOR][/B]
+- Updated the Settings. (Attempt to fix some kodi 18 bugs.)
+(Moved some things from the Nav tab back to the General tab.)
+(Might cause issues or errors, sorry about it lol its for the best.)
+
+[B][COLOR purple] v3.7 [/COLOR][/B]
+- Updated the Settings. (Attempt to fix some kodi 18 bugs.)
+
+[B][COLOR purple] v3.6 [/COLOR][/B]
+- Small module tweaks.
+- Cleaned up random Providers.
+- Added a few fixed Providers.
+- Removed Provider watchfreemovie.
+- Moved a few more Providers to the Temp folder.
+
+[B][COLOR purple] v3.5 [/COLOR][/B]
+- Updated CFscrape modules.
+- Moved 7 Providers to a temp folder that are down or have issues.
+(Im only pushing this update as a quick patch for the CFscrape issue.)
+(This update has not been tested fully so report any issues or whatnot.)
+
+[B][COLOR purple] v3.4 [/COLOR][/B]
+- Added 2 Dbird Providers that Tempest fixed or made.
+- Added 4 Providers back that are fixed/working again.
+- Removed cartoonhd because its a POS and tired of it.
+- Removed 3 Providers with sites down.
+- Removed 2 more Providers that are broken.
+(Probably wont fix em because im sick of em too lol.)
+(Movietube which was for trailers is now removed for good too. isnt needed.)
+(If you have a Dbird issue tell me in detail because i dont use any.)
+
+[B][COLOR purple] v3.3 [/COLOR][/B]
+- Added 3 new Providers
+- Removed 5 or so Providers that sucked ass or broke.
+- Added IPTV Plugin. (Some options use plugin.video.SportsDevil)
+- Added MusicChoice Plugin.
+- Added a hidden Adult Plugin. (nav.xxx)
+(Made plugin.video.SportsDevil optional so it can be uninstalled if not wanted.)
+(feel free to contact me if you find any issues with this update.)
+
+[B][COLOR purple] v3.2 [/COLOR][/B]
+- Moved movietube setting up incase it has issues again.
+- Added a few providers ToneTone was sitting on.
+- Added tunes plugin.
+- Added a few ResolveURL Auth Shortcuts to Settings.
+
+[B][COLOR purple] v3.1 [/COLOR][/B]
+- Added a couple new providers.
+- Fixed a few providers.
+- Removed some broken providers.
+- Fixed Broken urls for a few Plugins.
+
+[B][COLOR purple] v3.0 [/COLOR][/B]
+- Provider Cleanup.
+- Added a few providers.
+- Added Invictus provider. (The New 2ddl)
+(Props to whoever made the scraper.)
+
+[B][COLOR purple] v2.9 [/COLOR][/B]
+- Fixed up a few providers.
+- Added a couple providers.
+- Removed 2ddl Provider and maybe a couple others. (lol)
+- Fixed a few bugs.
+- Fixed the podcast section. (my bad)
+
+[B][COLOR purple] v2.8 [/COLOR][/B]
+- Added Pair Em in Tools Menu.(Web Browser Needed.)
+- Fixed some Providers.
+- Added a few Providers.
+- Removed a couple dead Providers.
+- Set Default Theme to Purple :).
+
+[B][COLOR purple] v2.7 [/COLOR][/B]
+-[B][COLOR orange]Renamed Addon Due to Issues With Capital Letters.[/COLOR][/B]
+(Sorry to Anyone Using This Addon.)(Should Run Amazing Now Tho!)
+
+[B][COLOR purple] v2.6 [/COLOR][/B]
+[B][COLOR purple](Might need to clear your UserData or revert to Default Settings, Sorry.)[/COLOR][/B]
+- Changed to a new url for  'In Theaters'  and  'In Theaters(OldStyle)'.
+(Both should be alot nicer for everyone worldwide, results vary)
+- Added TMDB to Movies, TV Shows, and its own section for a shitload of user lists.
+- Added Boxsets to Movies. (Thanks to Numbers? First place i seen it.)
+(did things a lil different for the boxsets layout, also went thru all the spare lists.)
+- Added TMDB custom icon for each Artwork Theme.
+- Added a few new providers and their settings, fixed a few too and updated others.
+- Remodeled the main menu a bit and moved some things around.
+(Didnt remove anything, just moved lol)
+- Remodeled the Movie Menu and TV Show Menu to my liking. (Might adjust it more later.)
+- Remodeled the Settings ALOT to make things a lil easier and cleaner looking.
+- Removed some Artwork themes to reduce size.
+(Added a new One too lol hello Purple <3)
+- Also added a few new random Settings that are awesome and useful.
+(Thanks to ExoRedux and a few people that requested some of them.)
+(Some new settings and stuff might have issues, Sorry still testing them.)
+(Contact me and tell me whats up and ill get to work fixing it.)
+
+[B][COLOR purple] v2.5 [/COLOR][/B]
+- Added a couple new providers and their settings.
+(Also Fixed a few that were broken.)
+
+[B][COLOR purple] v2.4 [/COLOR][/B]
+- Added Show Changelog option to the main menu.
+- Added a few more providers and added proper settings for them.
+- Fixed a couple providers, also added a few spare domains to some others.
+- Fixed a couple lists that didnt work proper.
+(If ya find any more lists that need adjusting let me know.)
+
+[B][COLOR purple] v2.3 [/COLOR][/B]
+- Added a new url for  'In Theaters'.
+- Renamed old 'In Theaters' option and added it below the new one in movies.
+- Added a few scrapers back that were down for repairs.
+- Added a few more things in from NiteCrawler that were still being tested.
+- Moved 'Featured' options out of the 'My' sections to where they really belong.
+
+[B][COLOR purple] v2.1 and v2.2 [/COLOR][/B]
+-Bugfix
+
+[B][COLOR purple] v2.0 [/COLOR][/B]
+- Tested and fixed a few fuckups lol.
+- Decided the new updates earn this thing a freash number.
+(Last public release was 1.5, 1.6-1.8 was released to private)
+(Might have to restore settings to default in the addon)
+(Might have to uninstall the addon and wipe its userdata)
+
+[B][COLOR purple] v1.6 [/COLOR][/B]
+- Added Menu Items from NiteCrawler and PlugIns.
+- Added NiteCrawlers UserList Collection also.
+- Cleaned Providers and Changed the Provider Settings Layout.
+- Changed More of the Settings Layout and Settings.
+(Might have to restore settings to default in the addon)
+(Might have to uninstall the addon and wipe its userdata)
+
+[B][COLOR purple] v1.5 [/COLOR][/B]
+- Total CleanUp of Providers, Checked and all good as of 10-12-2018.
+- Settings updated to match provider list.
+- Error found on Kodi 18: Settings get all messed up and scrambled.
+(Limits those users big time lol.)
+- Disabled darewatch provider for that reason and because its sloppy.
+- Added a default fanart.tv api key in the settings for ya.
+
+[B][COLOR purple] v1.4.5 [/COLOR][/B]
+- Updated the search code to work on Kodi 18 thanks to doko's github.
+(was lazy and just uploaded this little update as 1.4 because who cares about 18)
+
+[B][COLOR purple] v1.4 [/COLOR][/B]
+- Added 11 more providers that i fixed and 5 that i forgot in a folder.
+(Added them to the addon settings also enabled.)
+
+[B][COLOR purple] v1.3 [/COLOR][/B]
+- Added more providers that i fixed.
+- Removed all the providers that dont work for my device.
+(Stored in my pocket to fix in the future.)
+- All providers are enabled in the settings and working.
+(Removed the provider settings that matched ones i removed.)
+
+[B][COLOR purple] v1.2 [/COLOR][/B]
+- Cleaned up random stuff and updated providers.
+- Tested every provider on Oct. 4th 2018.
+(Removed all the ones that were not working.)
+- Disabled a few providers in settings that are ddos protected.
+- Disabled a few more providers in settings that were slow or unavailable.
+
+[B][COLOR purple] v1.1 [/COLOR][/B]
+- Initial Version.
+- Forked from Yoda and modified to my liking.
+(Thanks to any devs that helped design any part of this.)
+

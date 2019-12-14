@@ -1,0 +1,6 @@
+[o]- Double Check Everything.
+[o]- Double Test Everything.
+[o]- Maybe Add Folder Size to make use of it.
+[o]- Maybe Add Stats to Clean Options.
+[o]- Add rest of the descriptions.
+[o]- Upfate Language Files.
