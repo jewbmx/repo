@@ -204,18 +204,18 @@
 
 
 <addon id="plugin.audio.jewmc" name="JewMC" version="1.1" provider-name="JewBMX">
-<requires>
-  <import addon="xbmc.python" version="2.25.0"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>audio</provides>
-</extension>
-<extension point="xbmc.addon.metadata">
-    <summary lang="en">Music Choice Radio Channels</summary>
-    <description lang="en">Free the People, Free the World!</description>
-    <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <requires>
+      <import addon="xbmc.python" version="2.25.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+      <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Music Choice Radio Channels</summary>
+        <description lang="en">Free the People, Free the World!</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <license>Free the People!, Free the World!!</license>
-    <platform>all</platform>
+        <platform>all</platform>
     </extension>
 </addon>
 
