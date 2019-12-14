@@ -26,24 +26,6 @@
 </addon>
 
 
-<addon id="lanik.repo" name="Lanik Repository" provider-name="Dalibor Lanik" version="1.0.2">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0" />
-        </requires>
-        <extension name="Lanik Repository" point="xbmc.addon.repository">
-            <info compressed="false">http://kodi.lanik.org/_repo/addons.xml</info>
-            <checksum>http://kodi.lanik.org/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">http://kodi.lanik.org/_repo/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Repository for my KODI plugins</summary>
-            <description>KODI Repository for stuff made by D. Lanik</description>
-            <platform>all</platform>
-    </extension>
-</addon>
-
-
 <addon id="resource.images.skinbackgrounds.purp" name="Skin Backgrounds - Purple" version="1.0" provider-name="JewBMX">
     <extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
     <requires>
