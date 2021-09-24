@@ -28,7 +28,7 @@ def authTMDb():
     try:
         if not SESSION_ID == '':
             if control.yesnoDialog('A Session Already Exists.' + '[CR]' + 'Delete Session?', heading='TMDB'):
-                delete_session()
+                return delete_session()
             raise Exception()
         if USERNAME == '' or PASSWORD == '':
             control.infoDialog('Check Account Credentials.', sound=True)
@@ -55,120 +55,39 @@ def authTMDb():
 ############################################
 
 
-#Create Request Token
-#get/authentication/token/new
-
-#Create a temporary request token that can be used to validate a TMDB user login. 
-
-
-#https://api.themoviedb.org/3/authentication/token/new?api_key=<<api_key>>
-
-
-#{
-  #"success": true,
-  #"expires_at": "2016-08-26 17:04:39 UTC",
-  #"request_token": "ff5c7eeb5a8870efe3cd7fc5c282cffd26800ecd"
-#}
-
-
 def create_request_token():
     try:
         url = API_URL + 'authentication/token/new?api_key=%s' % API_KEY
         result = requests.get(url, headers=HEADERS).json()
-        if result.get('success') is True:
-            request_token = result.get('request_token')
-            return request_token
-        else:
-            control.infoDialog('TMDb create_request_token Failed', sound=True)
-            return None
+        if not result.get('success') is True:
+            raise Exception()
+        request_token = result['request_token']
+        return request_token
     except:
-        control.infoDialog('TMDb create_request_token Failed', sound=True)
-        log_utils.log('create_session_id', 1)
+        log_utils.log('create_request_token', 1)
         return None
 
 
 ############################################
 ############################################
-
-
-#Create Session With Login
-#post/authentication/token/validate_with_login
-
-#This method allows an application to validate a request token by entering a username and password.
-
-#Not all applications have access to a web view so this can be used as a substitute.
-
-#Please note, the preferred method of validating a request token is to have a user authenticate the request via the TMDB website.
-
-#If you decide to use this method please use HTTPS.
-
-
-#https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=<<api_key>>
-
-
-#Request Body application/json
-#{
-  #"username": "johnny_appleseed",
-  #"password": "test123",
-  #"request_token": "1531f1a558c8357ce8990cf887ff196e8f5402ec"
-#}
-
-
-#Responses application/json
-#{
-  #"success": true,
-  #"expires_at": "2018-07-24 04:10:26 UTC",
-  #"request_token": "1531f1a558c8357ce8990cf887ff196e8f5402ec"
-#}
 
 
 def create_session_with_login(request_token):
     try:
         url = API_URL + 'authentication/token/validate_with_login?api_key=%s' % API_KEY
-        post = {
-            "username": "%s" % str(USERNAME),
-            "password": "%s" % str(PASSWORD),
-            "request_token": "%s" % str(request_token)
-        }
+        post = {"username": "%s" % str(USERNAME), "password": "%s" % str(PASSWORD), "request_token": "%s" % str(request_token)}
         result = requests.post(url, data=json.dumps(post), headers=HEADERS).json()
-        log_utils.log('create_session_with_login result: \n' + repr(result))
-        if result.get('success') is True:
-            request_token = result.get('request_token')
-            return request_token
-        else:
-            control.infoDialog('TMDb create_session_with_login Failed', sound=True)
-            return None
+        if not result.get('success') is True:
+            raise Exception()
+        request_token = result['request_token']
+        return request_token
     except:
-        control.infoDialog('TMDb create_session_with_login Failed', sound=True)
         log_utils.log('create_session_with_login', 1)
         return None
 
 
-
 ############################################
 ############################################
-
-
-#Create Session
-#post/authentication/session/new
-
-#You can use this method to create a fully valid session ID once a user has validated the request token.
-
-
-#https://api.themoviedb.org/3/authentication/session/new?api_key=<<api_key>>
-
-
-#Request Body application/json
-#{
-  #"request_token": "6bc047b88f669d1fb86574f06381005d93d3517a"
-#}
-
-
-#Responses application/json
-#{
-  #"success": true,
-  #"session_id": "79191836ddaa0da3df76a5ffef6f07ad6ab0c641"
-#}
 
 
 def create_session(request_token):
@@ -176,57 +95,32 @@ def create_session(request_token):
         url = API_URL + 'authentication/session/new?api_key=%s' % API_KEY
         post = {"request_token": "%s" % str(request_token)}
         result = requests.post(url, data=json.dumps(post), headers=HEADERS).json()
-        log_utils.log('create_session result: \n' + repr(result))
-        if result.get('success') is True:
-            session_id = result.get('session_id')
-            return session_id
-        else:
-            control.infoDialog('TMDb create_session Failed', sound=True)
-            return None
+        if not result.get('success') is True:
+            raise Exception()
+        session_id = result['session_id']
+        return session_id
     except:
-        control.infoDialog('TMDb create_session Failed', sound=True)
         log_utils.log('create_session', 1)
         return None
 
 
-
 ############################################
 ############################################
-
-
-#Delete Session
-#delete/authentication/session
-
-#If you would like to delete (or "logout") from a session, call this method with a valid session ID.
-
-
-#https://api.themoviedb.org/3/authentication/session?api_key=<<api_key>>
-
-
-#Request Body application/json
-#{
-  #"session_id": "2629f70fb498edc263a0adb99118ac41f0053e8c"
-#}
-
-
-#Responses application/json
-#{
-  #"success": true
-#}
 
 
 def delete_session():
     try:
         if SESSION_ID == '':
-            return
+            raise Exception()
         url = API_URL + 'authentication/session?api_key=%s' % API_KEY
         post = {"session_id": "%s" % str(SESSION_ID)}
         result = requests.delete(url, data=json.dumps(post), headers=HEADERS).json()
-        if result.get('success') is True:
-            control.setSetting(id='tmdb.session', value='')
-            control.infoDialog('TMDb delete_session Successful', sound=True)
-        else:
-            control.infoDialog('TMDb delete_session Failed', sound=True)
+        if not result.get('success') is True:
+            raise Exception()
+        control.setSetting(id='tmdb.session', value='')
+        if not ACCOUNT_ID == '':
+            control.setSetting(id='tmdb.id', value='')
+        control.infoDialog('TMDb delete_session Successful', sound=True)
     except:
         control.infoDialog('TMDb delete_session Failed', sound=True)
         log_utils.log('delete_session', 1)
@@ -235,31 +129,6 @@ def delete_session():
 
 ############################################
 ############################################
-
-
-#Get Details
-#get/account
-
-#Get your account details.
-
-
-#https://api.themoviedb.org/3/account?api_key=<<api_key>>&session_id=hhh
-
-
-#Responses application/json
-#{
-  #"avatar": {
-    #"gravatar": {
-      #"hash": "c9e9fc152ee756a900db85757c29815d"
-    #}
-  #},
-  #"id": 548,
-  #"iso_639_1": "en",
-  #"iso_3166_1": "CA",
-  #"name": "Travis Bell",
-  #"include_adult": true,
-  #"username": "travisbell"
-#}
 
 
 def get_account_details(session_id):
