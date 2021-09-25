@@ -153,61 +153,107 @@ def get_account_details(session_id):
 ############################################
 
 
-#https://api.themoviedb.org/3/movie/9600/videos?api_key=<<api_key>>&language=en-US
-
-
-def tmdb_trailer(tmdb):
+def get_created_lists(url):
     try:
+        lists_url = API_URL + 'account/%s/lists?api_key=%s&language=en-US&session_id=%s&page=1' % (ACCOUNT_ID, API_KEY, SESSION_ID)
+        result = requests.get(lists_url, headers=HEADERS).json()
+        try:
+            page = int(result['page'])
+            total = int(result['total_pages'])
+            if page >= total:
+                raise Exception()
+            if not 'page=' in lists_url:
+                raise Exception()
+            next = '%s&page=%s' % (lists_url.split('&page=', 1)[0], str(page+1))
+        except:
+            next = ''
+        items = []
+        lists = result['results']
+        for list in lists:
+            list_name = list['name']
+            list_id = list['id']
+            list_url = url % list_id
+            items.append({'name': list_name, 'url': list_url, 'context': list_url, 'image': 'tmdb.png', 'next': next})
+        return items
+    except:
+        log_utils.log('get_created_lists', 1)
+        return items
+
+
+############################################
+############################################
+
+
+def mark_as_favorite(tmdb, media_type):
+    try:
+        url = API_URL + 'account/%s/favorite?api_key=%s&session_id=%s' % (ACCOUNT_ID, API_KEY, SESSION_ID)
+        post = {
+            "media_type": "%s" % str(media_type),
+            "media_id": "%s" % str(tmdb),
+            "favorite": "true"
+        }
+        result = requests.post(url, data=json.dumps(post), headers=HEADERS).json()
+        status_code = result['status_code']
+        status_message = result['status_message']
+        return {'status_code': status_code, 'status_message': status_message}
+    except:
+        log_utils.log('mark_as_favorite', 1)
+        return {'status_code': None, 'status_message': None}
+
+
+############################################
+############################################
+
+
+def add_to_watchlist(tmdb, media_type):
+    try:
+        url = API_URL + 'account/%s/watchlist?api_key=%s&session_id=%s' % (ACCOUNT_ID, API_KEY, SESSION_ID)
+        post = {
+            "media_type": "%s" % str(media_type),
+            "media_id": "%s" % str(tmdb),
+            "watchlist": "true"
+        }
+        result = requests.post(url, data=json.dumps(post), headers=HEADERS).json()
+        status_code = result['status_code']
+        status_message = result['status_message']
+        return {'status_code': status_code, 'status_message': status_message}
+    except:
+        log_utils.log('add_to_watchlist', 1)
+        return {'status_code': None, 'status_message': None}
+
+
+############################################
+############################################
+
+
+def get_movie_account_states(tmdb):
+    try:
+        url = API_URL + 'movie/%s/account_states?api_key=%s&session_id=%s' % (tmdb, API_KEY, SESSION_ID)
+        result = requests.get(url, headers=HEADERS).json()
+        favorite = result['favorite']
+        watchlist = result['watchlist']
+        return {'favorite': favorite, 'watchlist': watchlist}
+    except:
+        log_utils.log('get_movie_account_states', 1)
+        return {'favorite': None, 'watchlist': None}
+
+
+############################################
+############################################
+
+
+def get_trailers(tmdb):
+    try:
+        list = []
         url = API_URL + 'movie/%s/videos?api_key=%s&language=en-US' % (tmdb, API_KEY)
         result = requests.get(url, headers=HEADERS).json()
-        items = result['results'] #{"id":9600,"results":[
+        items = result['results']
         for item in items:
-            iso_639_1 = item['iso_639_1'] #"iso_639_1":"en",
-            iso_3166_1 = item['iso_3166_1'] #"iso_3166_1":"US",
-            name = item['name'] #"name":"Big Momma's House - Trailer HQ",
-            key = item['key'] #"key":"njhwlzuPXv4",
-            id = item['id'] #"id":"533ec666c3a3685448001712"
-            published_at = item['published_at'] #"published_at":"2011-06-23T00:53:41.000Z",
-            site = item['site'] #"site":"YouTube",
-            size = item['size'] #"size":480,
-            type = item['type'] #"type":"Trailer",
-            official = item['official'] #"official":false,
+            list.append(item)
+        return list
     except:
-        log_utils.log('tmdb_trailer', 1)
-        pass
-
-
-############################################
-############################################
-
-
-#Get Created Lists
-#get/account/{account_id}/lists
-
-#Get all of the lists created by an account. Will invlude private lists if you are the owner.
-
-
-#https://api.themoviedb.org/3/account/{account_id}/lists?api_key=<<api_key>>&language=en-US&session_id=<session_id>&page=1
-
-
-#Responses application/json
-#{
-  #"page": 1,
-  #"results": [
-    #{
-      #"description": "Name pretty much says it all, here's the top 50 grossing films of all time.",
-      #"favorite_count": 0,
-      #"id": 10,
-      #"item_count": 0,
-      #"iso_639_1": "en",
-      #"list_type": "movie",
-      #"name": "Top 50 Grossing Films of All Time (Worldwide)",
-      #"poster_path": null
-    #}
-  #],
-  #"total_pages": 4,
-  #"total_results": 61
-#}
+        log_utils.log('get_trailers', 1)
+        return list
 
 
 ############################################
@@ -301,36 +347,6 @@ def tmdb_trailer(tmdb):
 ############################################
 
 
-#Mark as Favorite
-#post/account/{account_id}/favorite
-
-#This method allows you to mark a movie or TV show as a favorite item.
-
-
-#header = 'Content-Type: application/json;charset=utf-8'
-
-#https://api.themoviedb.org/3/account/{account_id}/favorite?api_key=<<api_key>>&session_id=<session_id>
-
-
-#Request Body application/json
-#{
-  #"media_type": "movie",
-  #"media_id": 550,
-  #"favorite": true
-#}
-
-
-#Responses application/json
-#{
-  #"status_code": 12,
-  #"status_message": "The item/record was updated successfully."
-#}
-
-
-############################################
-############################################
-
-
 #Get Movie Watchlist
 #get/account/{account_id}/watchlist/movies
 
@@ -408,65 +424,5 @@ def tmdb_trailer(tmdb):
   #"total_pages": 4,
   #"total_results": 64
 #}
-
-
-############################################
-############################################
-
-
-#Add to Watchlist
-#post/account/{account_id}/watchlist
-
-#Add a movie or TV show to your watchlist.
-
-#header 'Content-Type: application/json;charset=utf-8'
-
-
-#https://api.themoviedb.org/3/account/{account_id}/watchlist?api_key=<<api_key>>&session_id=<session_id>
-
-
-#Request Body application/json
-#{
-  #"media_type": "movie",
-  #"media_id": 11,
-  #"watchlist": true
-#}
-
-
-#Responses application/json
-#{
-  #"status_code": 1,
-  #"status_message": "Success."
-#}
-
-
-############################################
-############################################
-
-
-#Get Account States
-#get/movie/{movie_id}/account_states
-
-#Grab the following account states for a session:
-
-    #Movie rating
-    #If it belongs to your watchlist
-    #If it belongs to your favourite list
-
-
-#https://api.themoviedb.org/3/movie/{movie_id}/account_states?api_key=<<api_key>>&session_id=hhh
-
-
-#Responses application/json
-
-#{
-  #"id": 550,
-  #"favorite": true,
-  #"rated": {
-    #"value": 8
-  #},
-  #"watchlist": false
-#}
-
 
 
