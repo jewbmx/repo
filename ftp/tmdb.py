@@ -14,7 +14,7 @@ ACCOUNT_ID = control.setting('tmdb.id')
 
 API_KEY = control.setting('tmdb.api')
 if not API_KEY:
-    API_KEY = '<<api_key>>'
+    API_KEY = '<<API>>'
 
 API_URL = 'https://api.themoviedb.org/3/'
 HEADERS = {'Content-Type': 'application/json;charset=utf-8'}
@@ -299,6 +299,15 @@ def get_trailers(tmdb):
 #}
 
 
+def get_movie_favorites():
+    try:
+        url = API_URL + 'account/%s/favorite/movies?api_key=%s&session_id=%s&language=en-US&page=1' % (ACCOUNT_ID, API_KEY, SESSION_ID)
+        return url
+    except:
+        log_utils.log('get_movie_favorites', 1)
+        return
+
+
 ############################################
 ############################################
 
@@ -382,6 +391,15 @@ def get_trailers(tmdb):
   #"total_pages": 14,
   #"total_results": 277
 #}
+
+
+def get_movie_watchlist():
+    try:
+        url = API_URL + 'account/%s/watchlist/movies?api_key=%s&session_id=%s&language=en-US&page=1' % (ACCOUNT_ID, API_KEY, SESSION_ID)
+        return url
+    except:
+        log_utils.log('get_movie_watchlist', 1)
+        return
 
 
 ############################################
