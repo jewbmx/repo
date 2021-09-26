@@ -39,6 +39,8 @@ self.addDirectoryItem('Movie Lists', 'movieUserlists', 'mymovies.png', 'DefaultM
 ## movies.py
 """
 
+from resources.lib.modules import tmdb
+
     def __init__(self):
         self.list = []
 
@@ -59,13 +61,9 @@ self.addDirectoryItem('Movie Lists', 'movieUserlists', 'mymovies.png', 'DefaultM
         self.tmdb_userlists_link = self.tmdb_link + '/3/list/%s?api_key=%s&language=en-US&page=1' % ('%s', self.tmdb_key)
         self.tmdb_jewtestmovies_link = self.tmdb_userlists_link % ('97123')
 
-        if self.tmdb_session:
-            from resources.lib.modules import tmdb
-            self.tmdb_favorites_link = tmdb.get_movie_favorites()
-            self.tmdb_watchlist_link = tmdb.get_movie_watchlist()
-        else:
-            self.tmdb_favorites_link = ''
-            self.tmdb_watchlist_link = ''
+        self.tmdb_favorites_link = tmdb.get_movie_favorites()
+        self.tmdb_watchlist_link = tmdb.get_movie_watchlist()
+        # with my testing these 2 links being ran without auth just opens to a blank so the else was a waste of time.
 
 
     def shit_testing(self):
