@@ -96,7 +96,7 @@
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.0.1" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.2" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.scrubsv2.artwork" />
         <import addon="script.module.six" />
@@ -113,7 +113,7 @@
     <extension library="service.py" point="xbmc.service" start="startup" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">A Clean Source To Dirty Things...</summary>
-        <description lang="en">Movies, Tv Shows, Anime, and What Not. [CR] See Changelog For Changes. [CR] Providers are now sorted different in the settings and all the best ones are enabled. [CR] You enable/disable the ones you dont like and let me handle the broken providers. [CR] How it should be :)</description>
+        <description lang="en">Movies, Tv Shows, Anime, and What Not. [CR] See Changelog For Changes. [CR] You enable/disable the ones you dont like and let me handle the broken providers. [CR] How it should be :)</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <license>Free the People!, Free the World!!</license>
         <platform>all</platform>
@@ -122,7 +122,7 @@
             <fanart>resources/images/fanart.jpg</fanart>
             <screenshot>resources/images/screenshot.png</screenshot>
         </assets>
-        <news>[B] Total CleanUp of Providers [/B]: Checked and Cleaned as of 08-24-2019. [CR][B] Check ChangeLog For More Details. [/B] [CR][B] (Please Report Any Issues To Me Directly By Email Or GitHub.) [/B]</news>
+        <news>[B] Total CleanUp of Providers [/B]: Checked and Cleaned as of 03-20-2022. [CR][B] Check ChangeLog For More Details. [/B] [CR][B] (Please Report Any Issues To Me Directly By Email Or GitHub.) [/B]</news>
     </extension>
 </addon>
 
