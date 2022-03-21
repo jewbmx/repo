@@ -1,0 +1,15 @@
+[B][COLOR grey]
+(Contact me about any errors or issues. I dont really use Soc. Media)
+(Feel free to test anything and tell me what works and what dont.)
+(jewbmx@gmail.com OR https://github.com/jewbmx/repo/issues)[/COLOR][/B]
+
+- Changed way too much to list lol.(along with the removal of pretty much all debrid stuff.)
+- Converted older versions of TheOath and Scrubs into this strange thing.
+- Updated for Kodi 19.0 Based off Host505 Changes mostly. and a few from other folks also.
+- Now designed to be english only and supporting Kodi 19 only.(I dont use older versions.)
+- Stuffed with likely twice the shit and probably half the size.(plus surprisingly speedy.)
+- As the first update, expect problems and report em for me to fix em.(apoligies in advance.)
+
+[B][COLOR fuchsia][Save the Providers Stress and me some work lol, Disable what you Dont use.][/COLOR][/B]
+
+
