@@ -95,7 +95,7 @@
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.0.10" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.11" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.scrubsv2.artwork" />
         <import addon="script.module.six" />
