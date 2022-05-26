@@ -95,7 +95,7 @@
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.0.14" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.15" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.scrubsv2.artwork" />
         <import addon="script.module.six" />
@@ -121,7 +121,7 @@
             <fanart>resources/images/fanart.jpg</fanart>
             <screenshot>resources/images/screenshot.png</screenshot>
         </assets>
-        <news>[B] Total CleanUp of Providers [/B]: Checked and Cleaned as of 03-20-2022. [CR][B] Check ChangeLog For More Details. [/B] [CR][B] (Please Report Any Issues To Me Directly By Email Or GitHub.) [/B]</news>
+        <news>[B] Total CleanUp of Providers [/B]: Checked and Cleaned as of May 2022. [CR][B] Check ChangeLog For More Details. [/B] [CR][B] (Please Report Any Issues To Me Directly By Email Or GitHub.) [/B]</news>
     </extension>
 </addon>
 
