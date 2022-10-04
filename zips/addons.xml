@@ -81,6 +81,24 @@
 </addon>
 
 
+<addon id="plugin.video.json_iptv" version="1.0.01" name="Json IPTV" provider-name="JewBMX">
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>IPTV Addon.</summary>
+        <description>json_iptv is a large pile of iptv m3u/m3u8 files collected from various places which have been converted by hand to some simple json lists saved as .py to build quick easy lists in addons or used in this addon lol.(This addon is a slightly modified version of plugin.video.example if anyone is curious.)</description>
+        <license>Free the People!, Free the World!!</license>
+        <platform>all</platform>
+        <assets>
+            <icon>lib/images/icon.png</icon>
+            <fanart>lib/images/fanart.jpg</fanart>
+        </assets>
+        <news>Cleaned Up Some Dupes And Titles.</news>
+    </extension>
+</addon>
+
+
 <addon id="script.scrubsv2.artwork" version="1.5" name="[COLOR orange]Scrubs v2 Artwork[/COLOR]" provider-name="JewBMX">
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
