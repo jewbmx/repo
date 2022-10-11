@@ -113,7 +113,7 @@
 </addon>
 
 
-<addon id="plugin.video.scrubsv2" version="5.0.23" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.24" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
         <import addon="script.scrubsv2.artwork" />
         <import addon="script.module.six" />
