@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.json_iptv" version="1.0.02" name="Json IPTV" provider-name="JewBMX">
+    <requires>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>IPTV Addon.</summary>
+        <description>json_iptv is a large pile of iptv m3u/m3u8 files collected from various places which have been converted by hand to some simple json lists saved as .py to build quick easy lists in addons or used in this addon lol. plus a few iptv sites scraped as well.</description>
+        <license>Free the People!, Free the World!!</license>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/images/icon.png</icon>
+            <fanart>resources/images/fanart.jpg</fanart>
+        </assets>
+        <news>Cleaned Up Some Dupes And Titles. Did a little bit of code rework here and there lol.</news>
+    </extension>
+</addon>
+
