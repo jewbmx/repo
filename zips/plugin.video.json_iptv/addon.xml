@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.json_iptv" version="1.0.02" name="Json IPTV" provider-name="JewBMX">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.json_iptv" version="1.0.03" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
