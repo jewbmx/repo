@@ -84,7 +84,7 @@
 </addon>
 
 
-<addon id="plugin.video.json_iptv" version="1.0.03" name="Json IPTV" provider-name="JewBMX">
+<addon id="plugin.video.json_iptv" version="1.0.04" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -103,7 +103,7 @@
             <icon>resources/images/icon.png</icon>
             <fanart>resources/images/fanart.jpg</fanart>
         </assets>
-        <news>Cleaned Up Some Dupes And Titles. Did a little bit of code rework here and there lol.</news>
+        <news>Check ChangeLog.</news>
     </extension>
 </addon>
 
