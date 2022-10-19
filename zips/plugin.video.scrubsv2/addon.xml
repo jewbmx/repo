@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.scrubsv2" version="5.0.27" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
+<addon id="plugin.video.scrubsv2" version="5.0.28" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
-        <import addon="script.scrubsv2.artwork" />
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
         <import addon="script.module.requests" />
         <import addon="script.module.resolveurl" />
+        <import addon="script.scrubsv2.artwork" optional="true" />
         <import addon="script.trakt" optional="true" />
-        <import addon="plugin.video.youtube" optional="true" />
         <import addon="plugin.video.json_iptv" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
