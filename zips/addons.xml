@@ -108,7 +108,7 @@
 </addon>
 
 
-<addon id="script.scrubsv2.artwork" version="1.5" name="[COLOR orange]Scrubs v2 Artwork[/COLOR]" provider-name="JewBMX">
+<addon id="script.scrubsv2.artwork" version="1.6" name="[COLOR orange]Scrubs v2 Artwork[/COLOR]" provider-name="JewBMX">
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
         <summary>Scrubs v2 Artwork</summary>
@@ -117,7 +117,7 @@
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news>Reduced All FileSizes and removed Caps from FolderNames.</news>
+        <news>Changed the fanart to be a simple small image that has a matching color tone to the theme chosen.</news>
     </extension>
 </addon>
 
