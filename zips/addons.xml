@@ -84,9 +84,10 @@
 </addon>
 
 
-<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02a"> 
+<addon id="script.kcleaner" name="KCleaner" provider-name="Dalibor Lanik" version="4.02aa"> 
   <requires>
-    <import addon="xbmc.python" version="3.0.0" /> 
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="xbmc.addon" version="18.9.701" />
   </requires>
   <extension library="default.py" point="xbmc.python.pluginsource">
         <provides>executable</provides>
