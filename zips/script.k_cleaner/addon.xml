@@ -1,0 +1,30 @@
+<addon id="script.k_cleaner" name="K_Cleaner" provider-name="Dalibor Lanik" version="4.02b">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <website>http://projects.lanik.org/KodiProject_KCleaner.htm</website>
+        <summary lang="en_GB">Clean up temporary files in Kodi.(Forked and fixed for kodi v20 use.)</summary>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=307919</forum>
+        <email>dalibor@lanik.org</email>
+        <description lang="en_GB">Clean up temporary files in Kodi.(Forked and fixed for kodi v20 use.)</description>
+        <news>v4.0 [CR]- Python 3 version [CR]</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
+            <banner>resources/banner.jpg</banner>
+            <logo>resources/logo.png</logo>
+        </assets>
+    </extension>
+</addon>

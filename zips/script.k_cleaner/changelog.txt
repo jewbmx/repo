@@ -1,0 +1,136 @@
+v4.02b
+- Forked and fixed for kodi v20 use.
+
+v4.0
+- Python 3 compatibility
+
+v3.4
+- Small fix
+
+v3.3
+- Small fix for prewash
+
+v3.2
+- Small fixes
+- Option to check broken sources
+- Support for NFS
+- Translations
+
+v3.1
+- Language file format related changes 
+
+v3.0
+- Fix unicode error in some languages
+
+v2.9
+- Option to disable confirmation
+
+v2.8
+- Optional Thumbnail view
+
+v2.71
+- Bug Fix
+
+v2.7
+- Speed tweak for slow thumb reading - option to disable thumb size calc 
+
+v2.6
+- Bug fix
+
+v2.5
+- Added custom paths to be cleaned
+- Excluded ignored options from being displayed in confirmation dialog
+- Excluded ignored options from being calculated in totals
+
+v2.4
+- Option to clean Database Pre-Wash Scrub addon
+
+v2.3
+- Option to run KCleaner on every Kodi start
+- Option not to display summary or progress bar on scheduled clean
+
+v2.2
+- Indicate in menu if all or only not in DB thumbs are being cleaned
+- Refresh Mb cleaned in menu after settings change
+- Refresh Mc cleaned in menu after cleaning
+
+v2.1
+- Locking app when auto clean running (as not to run twice)
+- Display how much Mb would be cleaned in menu
+
+v2.0
+- Icon change
+
+v1.9
+- Change all occurances of local folder path to special:// in settings files
+
+v1.8
+- Completely rewrote interface
+- Optimizations in service/scheduler
+- Screenshots to reflect changes in interface
+
+v1.7
+- Better debugging
+- Code cleanup
+
+v1.6
+- Option not to delete latest (1-4) package(s)
+
+v1.5
+- Added cleaning of orphaned addon data folders
+
+v1.4
+- Added Spotitube addon
+- Added Retrospect addon
+- Small changes in logic/fixes
+
+v1.3
+- Do not exit from addon when cleaning done; added exit button
+- Various small optimizations
+
+v1.2
+- Scheduler
+- Calculate and display cleaning totals for scheduled run
+- If not scheduled run, always display totals box at the end
+- It is now possible to schedule cleanup of Textures12 database
+
+v1.1
+- Bug fix in settings
+
+v1.0
+- Textures database cleanup
+
+v0.9
+- Removed unnecessary code
+
+v0.8
+- Check which addons are not in a repo (i.e. installed from zip)
+- Scheduler to run selected cleanup(s) on startup every 1, 7, 30 or 90 days
+- Improved logic
+
+v0.7
+- Improved logic
+- Run all at once
+- Settings split by category
+- Debug logging
+- Ignore special://temp/archive_cache for Krypton
+
+v0.6
+- Display cleaning statistics
+
+v0.5
+- Check for unused registries
+- Added script.artwork.downloader/temp cleanup
+- option to ignore /thumbnails/animatedgifs in settings
+
+v0.4
+- Database compacting
+
+v0.3
+- Ignore (do not clean) addons selected in settings
+
+v0.2
+- Initial release
+
+v0.1
+- Alpha release
