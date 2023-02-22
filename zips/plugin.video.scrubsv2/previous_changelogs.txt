@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.13[/B] Switched most the client code back to my scrapePage def because request seems to still have errors for people. (I will probably swap it back in all the scrapers later.)
+
 [B]- 5.1.12[/B] Swapped the trakt module back to the use of client.request and saved the ALT version for now.(seems to be working well again.) Updated a couple scrapers, like filepursuit which just had a api update recently.(Also added the file names to the scraper to make it more useful.) Ditched a couple lines of log code on client.request to limit the log spam produced.
 
 [B]- 5.1.11[/B] Flipped the previous_changelogs file to be latest changes first and a gap inbetween em. Removed some dead/dud scrapers. Changed client.py a bit and broke it down then swapped to a new modified request def. Also swapped the entire addon back to client.request use.(Old module saved in the addon for now as client_old.) Updated my host type of code to match resolveurls last update.(Had little tricks coded that were not needed now.)
