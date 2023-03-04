@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.14[/B] Made the final client changes counting the scrapers. Made atleast 1 new scraper. Removed about 12 duped sites/scrapers and saved em in their matching scraper for future swaps. (Didnt bother touching my "broken" folder of scrapers since they will probably need recoded anyways when they are worth adding back in.)
+
 [B]- 5.1.13[/B] Switched most the client code back to my scrapePage def because request seems to still have errors for people. (I will probably swap it back in all the scrapers later.)
 
 [B]- 5.1.12[/B] Swapped the trakt module back to the use of client.request and saved the ALT version for now.(seems to be working well again.) Updated a couple scrapers, like filepursuit which just had a api update recently.(Also added the file names to the scraper to make it more useful.) Ditched a couple lines of log code on client.request to limit the log spam produced.
