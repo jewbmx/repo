@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.16[/B] Modified Sky Channels so the api url pulls "now, next, and later" which gives a 3 movie lineup per channel.(thats 3 before my dupe blocking.) Modified TVpassport a bit by grouping some dupe-ish channels to reduce and clean up the channel list a little. (Grouped channels scrape together and have my dupe blocking.) Updated the source info line code again for the same issue lol.
+
 [B]- 5.1.15[/B] Modified the filepursuit scraper a bit more. Updated a little line making code for the source info shown which removes blank bits like '/ /' or '| |'. Added a new ghetto setting "Trakt Progress/Episodes Item Limit" which makes your "trakt progress" or "trakt episodes" load 50, 100, or 150 items max. (Defaults 100.) Updated a few scrapers that gave the wrong episode results.(Also found that 2 putlocker ones give bad results due to their site data. Their sources are membed links but the link and episode data is reversed so episode 1 is 7 and 7 is 1, and membed produces 5ish hosts/sources that are the wrong episode lol.) Added a new setting "Use Indexers Cache Feature" to disable/bypass the caching code used in the main indexers for like trakt, tmdb, or imdb type of stuff.
 
 [B]- 5.1.14[/B] Made the final client changes counting the scrapers. Made atleast 1 new scraper. Removed about 12 duped sites/scrapers and saved em in their matching scraper for future swaps. (Didnt bother touching my "broken" folder of scrapers since they will probably need recoded anyways when they are worth adding back in.)
