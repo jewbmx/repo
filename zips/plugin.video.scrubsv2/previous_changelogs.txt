@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.18[/B] Remade my TMDB Collections section with a fresh list and more details, then redesigned it too and added more features as well. Might of done more changes but dont recall since the collections work was so extensive.
+
 [B]- 5.1.17[/B] Updated TVpassport a little more and sorted it to be the cleaner a-z lol.(Looking like the site has random loading errors that can cause the need to retry a channel, thought it was code lol.) Moved a few settings to Devish and made a couple settings to use season posters/viewtypes instead of the episode thumbs/viewtypes.(Warning both settings are a bit ghetto but seem to still work. Not sure if there are any unforseen issues these can cause lol.)
 
 [B]- 5.1.16[/B] Modified Sky Channels so the api url pulls "now, next, and later" which gives a 3 movie lineup per channel.(thats 3 before my dupe blocking.) Modified TVpassport a bit by grouping some dupe-ish channels to reduce and clean up the channel list a little. (Grouped channels scrape together and have my dupe blocking.) Updated the source info line code again for the same issue lol.
