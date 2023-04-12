@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.19[/B] Changed my TMDB Collections section to be one line or two with a setting, and put some two line cleanup code in to counter the long lines from being glitchy. Also changed the genres look from the "1 | 2" to a simple "(1, 2)".(Let me know if anyone wants the option to pick between them styles. new ways good for single and old ways nice on double lol.) Fixed/Created/Removed some scrapers.
+
 [B]- 5.1.18[/B] Remade my TMDB Collections section with a fresh list and more details, then redesigned it too and added more features as well. Might of done more changes but dont recall since the collections work was so extensive.
 
 [B]- 5.1.17[/B] Updated TVpassport a little more and sorted it to be the cleaner a-z lol.(Looking like the site has random loading errors that can cause the need to retry a channel, thought it was code lol.) Moved a few settings to Devish and made a couple settings to use season posters/viewtypes instead of the episode thumbs/viewtypes.(Warning both settings are a bit ghetto but seem to still work. Not sure if there are any unforseen issues these can cause lol.)
