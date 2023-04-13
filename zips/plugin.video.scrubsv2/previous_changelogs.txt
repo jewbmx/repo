@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.20[/B] Did a full-ish scraper/provider cleanup. (Few days back lol.) Changed the WatchOnline section yet again to be like a older design i did using all 90+ dedicated sites, besides a few that didnt load for me which i still tossed in half written labeled "(Broken?)". (Did not test it all yet, but did test a little and made sure Doctor Who worked lol. Feel free to tell me if ya find any issues. I also left some log code active for error hunting.)
+
 [B]- 5.1.19[/B] Changed my TMDB Collections section to be one line or two with a setting, and put some two line cleanup code in to counter the long lines from being glitchy. Also changed the genres look from the "1 | 2" to a simple "(1, 2)".(Let me know if anyone wants the option to pick between them styles. new ways good for single and old ways nice on double lol.) Fixed/Created/Removed some scrapers.
 
 [B]- 5.1.18[/B] Remade my TMDB Collections section with a fresh list and more details, then redesigned it too and added more features as well. Might of done more changes but dont recall since the collections work was so extensive.
