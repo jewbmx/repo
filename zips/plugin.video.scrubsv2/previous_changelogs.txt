@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.22[/B] Did a scrapers/providers update/cleanup. Made some new search customizing bits with settings found around the bottom of General Settings picking the search metadata source for Movies, TV Shows, People, and Keywords.(All 4 have IMDb and TMDb but i didnt add Trakt to People or Keywords.) Made some new Info Metadata customizing bits with settings found at the bottom of General Settings to pick the info metadata source for Movies, TV Shows, Seasons, and Episodes.(TMDb based or Trakt based info for movies and shows but likely not always set for all season and episode stuff/code.) Also added in a new artwork setting in the same place but think its only in movies and tvshows.(This setting likely needs tuned to match the older fanartTV setting now.)
+
 [B]- 5.1.21[/B] Changed the WatchOnline sections code a little more to ensure source scrapes work. (was erroring out when the html shown a ' instead of " but now that dont matter lol.)
 
 [B]- 5.1.20[/B] Did a full-ish scraper/provider cleanup. (Few days back lol.) Changed the WatchOnline section yet again to be like a older design i did using all 90+ dedicated sites, besides a few that didnt load for me which i still tossed in half written labeled "(Broken?)". (Did not test it all yet, but did test a little and made sure Doctor Who worked lol. Feel free to tell me if ya find any issues. I also left some log code active for error hunting.)
