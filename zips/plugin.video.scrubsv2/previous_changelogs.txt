@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.23[/B] Changed the code for Trakt Library Sync a little which i think is how it was supposed to always be. Updated the InfoTagger module by jurialmunkey to v0.0.7 since i use it "built-in". Did a little scraper work. Added my LazyLinks addon to Tools and Optional Installs. Changed a little of my previous changes back to the way it was to try fixing some error someone has lol.
+
 [B]- 5.1.22[/B] Did a scrapers/providers update/cleanup. Made some new search customizing bits with settings found around the bottom of General Settings picking the search metadata source for Movies, TV Shows, People, and Keywords.(All 4 have IMDb and TMDb but i didnt add Trakt to People or Keywords.) Made some new Info Metadata customizing bits with settings found at the bottom of General Settings to pick the info metadata source for Movies, TV Shows, Seasons, and Episodes.(TMDb based or Trakt based info for movies and shows but likely not always set for all season and episode stuff/code.) Also added in a new artwork setting in the same place but think its only in movies and tvshows.(This setting likely needs tuned to match the older fanartTV setting now.)
 
 [B]- 5.1.21[/B] Changed the WatchOnline sections code a little more to ensure source scrapes work. (was erroring out when the html shown a ' instead of " but now that dont matter lol.)
