@@ -80,7 +80,7 @@
 </addon>
 
 
-<addon id="plugin.video.json_iptv" version="1.0.08" name="Json IPTV" provider-name="JewBMX">
+<addon id="plugin.video.json_iptv" version="1.0.09" name="Json IPTV" provider-name="JewBMX">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
