@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.25[/B] Did some more code changes in various places mainly the indexers, hopefully fixing some things, speeding things up, and not breaking anything lol. (As always the episode indexer is the only thing left on my todo list, shame i cant outsource it to someone else.)
+
 [B]- 5.1.24[/B] Did some code changes in various places and modified some scrapers that gave the wrong episode sources.(If you wanna help with this just send me the scraper name, tvshow, season, and episode. any other info is welcomed but this whats needed to find the bugs lol.)
 
 [B]- 5.1.23[/B] Changed the code for Trakt Library Sync a little which i think is how it was supposed to always be. Updated the InfoTagger module by jurialmunkey to v0.0.7 since i use it "built-in". Did a little scraper work. Added my LazyLinks addon to Tools and Optional Installs. Changed a little of my previous changes back to the way it was to try fixing some error someone has lol.
