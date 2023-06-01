@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.26[/B] Added a Watchedlist option for trakt that can be handy altho likely slow loading lol.(Loads a list of everything you have seen for that mediatype, got the idea for this from someone on reddit.) Changed the source resolve error to include the exception/info for the url. Tweaked a few things like metacache and whatnot to try and clean up the code and speed things up a bit. Updated my Trailers code quite a bit and added some new settings for the changes. (Not gonna go into detail but yall should enjoy it.)
+
 [B]- 5.1.25[/B] Did some more code changes in various places mainly the indexers, hopefully fixing some things, speeding things up, and not breaking anything lol. (As always the episode indexer is the only thing left on my todo list, shame i cant outsource it to someone else.)
 
 [B]- 5.1.24[/B] Did some code changes in various places and modified some scrapers that gave the wrong episode sources.(If you wanna help with this just send me the scraper name, tvshow, season, and episode. any other info is welcomed but this whats needed to find the bugs lol.)
