@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.lazylinks" name="LazyLinks" version="1.0" provider-name="JewBMX">
+<addon id="plugin.program.lazylinks" name="LazyLinks" version="1.1" provider-name="JewBMX">
     <requires>
         <import addon="script.module.kodi-six" />
     </requires>
@@ -12,7 +12,7 @@
         <description lang="en">Web Browser needed like FireFox, Dolphin, Chrome. [CR] Simple to use, click the one you need [CR] and if all else fails just open the website needed on another device connected to your internet [CR] and it will do the same as this app.</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <license>Free the People!, Free the World!!</license>
-        <news>Works in Kodi v20.</news>
+        <news>Works in Kodi v20. Now includes a great alternative source for content.</news>
         <assets>
             <icon>resources/icon.png</icon>
         </assets>
