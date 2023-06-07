@@ -7,6 +7,10 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.28[/B] Fixed a little error i made in the settings which broke the clean settings bit but didnt really effect anything else lol. Fixed/Updated a few scrapers to do a second search if the first one fails.(Its TV Show based only, First search is title and season, Second is just title.) Finished my changes to the trailers module.(Mostly cleanup.) Fixed a few scrapers resolve code so the results will play instead of failing. Also tossed a couple scrapers back into the mix that were duds but work again.
+
+[B]- 5.1.27[/B] Added a Flixed Channels section thats like the TVpassport one. (from flixed.io, if i forgot any good channels let me know to add em.) Made a newish scraper for tvmovieflix_com coded about halfway. Also brought back the scraper for 0123putlocker_com. (Still runs slow lol.) Added a4kSubtitles to the Optional Installs ssection of tools, also added a open a4kSubtitles settings shortcut in the addon settings below the current subtitle settings.(only visible if a4kSubtitles is installed. Handy to quickly enable/disable shit.) Made a new scraper movieffm_net and made it disabled by default since it might be crappy. Made a few more new random scrapers.
+
 [B]- 5.1.26[/B] Added a Watchedlist option for trakt that can be handy altho likely slow loading lol.(Loads a list of everything you have seen for that mediatype, got the idea for this from someone on reddit.) Changed the source resolve error to include the exception/info for the url. Tweaked a few things like metacache and whatnot to try and clean up the code and speed things up a bit. Updated my Trailers code quite a bit and added some new settings for the changes. (Not gonna go into detail but yall should enjoy it.)
 
 [B]- 5.1.25[/B] Did some more code changes in various places mainly the indexers, hopefully fixing some things, speeding things up, and not breaking anything lol. (As always the episode indexer is the only thing left on my todo list, shame i cant outsource it to someone else.)
