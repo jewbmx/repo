@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
 
-
 <addon id="repository.jewrepo" name="[COLOR purple]JewRepo[/COLOR]" version="1.6.0" provider-name="JewBMX">
     <extension point="xbmc.addon.repository" name="[COLOR purple]JewRepo[/COLOR]">
     <dir>
@@ -25,7 +24,6 @@
         </assets>
     </extension>
 </addon>
-
 
 <addon id="script.k_cleaner" name="K_Cleaner" provider-name="Dalibor Lanik" version="4.02b">
     <requires>
@@ -58,7 +56,6 @@
     </extension>
 </addon>
 
-
 <addon id="plugin.program.lazylinks" name="LazyLinks" version="1.1" provider-name="JewBMX">
     <requires>
         <import addon="script.module.kodi-six" />
@@ -78,7 +75,6 @@
         </assets>
     </extension>
 </addon>
-
 
 <addon id="plugin.video.json_iptv" version="1.0.09" name="Json IPTV" provider-name="JewBMX">
     <requires>
@@ -103,7 +99,6 @@
     </extension>
 </addon>
 
-
 <addon id="script.scrubsv2.artwork" version="1.6" name="[COLOR orange]Scrubs v2 Artwork[/COLOR]" provider-name="JewBMX">
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
@@ -116,7 +111,6 @@
         <news>Changed the fanart to be a simple small image that has a matching color tone to the theme chosen.</news>
     </extension>
 </addon>
-
 
 <addon id="plugin.video.scrubsv2" version="5.1.30" name="[COLOR orange]Scrubs v2[/COLOR]" provider-name="JewBMX">
     <requires>
@@ -149,7 +143,6 @@
         <news>Total CleanUp of Providers : Checked and Cleaned as of Feb. 2023. [CR] Check ChangeLog For More Details. [CR] (Please Report Any Issues To Me Directly By Email Or GitHub.)</news>
     </extension>
 </addon>
-
 
 </addons>
 
