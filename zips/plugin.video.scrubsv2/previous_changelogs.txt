@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.33[/B] Made/Fixed/Updated/Cleaned some scrapers lol. Did some more work to my scrape_sources module and the hosts scraped within.(tested, updated, or fixed a few of em like vidsrc.) Added/Edited some modules too for some scrapers.
+
 [B]- 5.1.32[/B] *Rushed Update for a user that disabled the TopBar and couldnt get it back.* Added a option in cleaning tools to remove saved viewtype bits.(think it wipes all.) Added a force open sidemenu/slidemenu option in the setup viewtypes section and in dev tools.(does what it says lol.) Might of fixed another scraper or something, was in the middle of working on some when this all came up.
 
 [B]- 5.1.31[/B] Updated a few scrapers with a little help from some fellow users input. Fixed a couple more scrapers that had bad searchs, Also added in my search_engines module that i have been making.(Note that this module is not done and due to change as i continue making it. As of now Bing is the only one coded most the way.) Added a setting to enable or disable the host limit on scrapers.(enabled: useful to speed up some slow scrapers, disabled: useful for when you cant get a playable source.) Moved the settings for Trailers to the bottom of the General Settings tab.(seems cleaner this way and easier to navigate and toggle shit lol.)
