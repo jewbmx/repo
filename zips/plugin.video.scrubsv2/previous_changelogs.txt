@@ -1,11 +1,13 @@
 [B][COLOR grey]
 (Contact me about any errors or issues. I dont really use Soc. Media)
 (Feel free to test anything and tell me what works and what dont.)
-(jewbmx@gmail.com OR https://github.com/jewbmx/repo/issues)[/COLOR][/B]
-[My Work is now done with/for: Kodi 19 and 20, older versions beware lol.]
+(https://github.com/jewbmx/repo/issues)[/COLOR][/B]
+[My Work is now done with/for: Kodi 19 and 20 or higher, older versions beware lol.]
 [B][COLOR fuchsia][Save the Providers Stress and me some work lol, Disable what you Dont use.][/COLOR][/B]
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
+
+[B]- 5.1.39[/B] Updated the settings a little for easier user use lol.(mainly the account tab.) Updated some scrape_sources stuff like some host fixes. Removed my contact details due to fools and trolls.(AKA Fools lol) Removed pretty much all the IMDB stuff besides trailers and common imdb_number use lol. Did some light scraper work plus adding some new ones.
 
 [B]- 5.1.38[/B] Tossed rabbitstream and dokicloud into the hostcapDict list so they can be blocked as "Captcha Sources" since they never seem to work for me but might for someone else lol. Swapped back to the client.scrapePage code in alot more spots while tracking down a error for someone and dont feel like bothering to change it back lol.(scrapePage is faster anyways which is what most folks want.) Did various scraper work and did some updating for the scrape_sources module.(Waited for resolveurl to update so the host domains would match everyones resolvers.)
 
