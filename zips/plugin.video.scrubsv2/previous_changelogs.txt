@@ -7,6 +7,8 @@
 
 [B][COLOR orange]Previous Log Info[/COLOR][/B]
 
+[B]- 5.1.40[/B] Did some light scraper work plus adding some new ones.(With the help of some folks from github.) Might of done more but dont recall since my updates are so far apart anymore lmao. Decided to push this update "incomplete" as i have more to do but can count it as like a stage1 and stage2 lol.
+
 [B]- 5.1.39[/B] Updated the settings a little for easier user use lol.(mainly the account tab.) Updated some scrape_sources stuff like some host fixes. Removed my contact details due to fools and trolls.(AKA Fools lol) Removed pretty much all the IMDB stuff besides trailers and common imdb_number use lol. Did some light scraper work plus adding some new ones.
 
 [B]- 5.1.38[/B] Tossed rabbitstream and dokicloud into the hostcapDict list so they can be blocked as "Captcha Sources" since they never seem to work for me but might for someone else lol. Swapped back to the client.scrapePage code in alot more spots while tracking down a error for someone and dont feel like bothering to change it back lol.(scrapePage is faster anyways which is what most folks want.) Did various scraper work and did some updating for the scrape_sources module.(Waited for resolveurl to update so the host domains would match everyones resolvers.)
